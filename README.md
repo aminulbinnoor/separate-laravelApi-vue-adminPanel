@@ -54,10 +54,10 @@ CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/coreui/coreui-free-vue-laravel-admin-template.git my-project
+$ git clone https://github.com/aminulbinnoor/separate-laravelApi-vue-adminPanel.git separate-project
 
 # go into app's directory
-$ cd my-project/laravel
+$ cd separate-project/laravel
 
 # install app's dependencies
 $ composer install
@@ -170,7 +170,7 @@ $ php artisan migrate:refresh --seed
 
 ```bash
 # go to coreui directory
-$ cd ../coreui
+$ cd coreui
 
 # install app's dependencies
 $ npm install
@@ -233,7 +233,7 @@ To this:
 ```js
 changePort: 'localhost:8000',
 ```
-4. 
+4.
 ``` bash
 # back to laravel directory
 $ cd ../laravel
@@ -247,7 +247,7 @@ $ npm run dev
 # start local server
 $ php artisan serve
 ```
-Open your browser with address: [localhost:8000](localhost:8000) 
+Open your browser with address: [localhost:8000](localhost:8000)
 
 ### When you have project open in browser
 
@@ -258,7 +258,7 @@ Click "Login" on sidebar menu and log in with credentials:
 
 This user has roles: _user_ and _admin_
 
---- 
+---
 
 ### How to add a link to the sidebar:
 
@@ -292,9 +292,9 @@ $id = $this->beginDropdown( $rolesString, $visibleName, $href, $iconString);
 * `$href` - a href, ex. `/homepage` or `http://example.com`
 * `$iconString` - a string containing valid CoreUI icon name (kebab-case). For example: `cil-speedometer` or `cil-pencil`
 
-To end dropdown section - use function `endDropdown()`. 
+To end dropdown section - use function `endDropdown()`.
 
-To add __link__ to __dropdown__ call function `insertLink()` between function calls `beginDropdown()` and `endDropdown()`. 
+To add __link__ to __dropdown__ call function `insertLink()` between function calls `beginDropdown()` and `endDropdown()`.
 Example:
 ```php
 $id = $this->beginDropdown('guest,user,admin', 'Some dropdown', 'http://example.com', 'cil-puzzle');
@@ -308,7 +308,7 @@ $this->joinAllByTransaction();
 ```
 
 Once done with seeds file edit, __run__:
-``` bash 
+``` bash
 $ php artisan migrate:refresh --seed
 # This command also rollbacks database and migrates it again.
 ```
@@ -330,7 +330,7 @@ It is an example of data presentation in a pagination table, and CRUD functional
 #### Users
 It is a simple example of how to manage registered users.
 
-#### Menu management 
+#### Menu management
 Menu management allows you to toggle the visibility of menu items for individual user roles.
 
 #### Role management
